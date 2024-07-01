@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&display=swap');
+
+/* -------  General Styles ------- */
+
+h1 {
+  font-size: 32px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #caf0f8;
+  color: #023e8a;
+}
+
+/* -------  Menu ------- */
+
+.side-bar {
+  background-color: #023e8a;
+  color: #caf0f8;
+  min-width: 200px;
+}
+
+.sidebar-align{
+  align-items: start;
+  justify-content: start;
+}
+
+.sidebar-brand-text{
+  color: #caf0f8;
+}
+
+/* -------  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: right;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.item-vertical-align {
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.item-width {
+  flex: 1;
+}
+
+
+form input[type=text] {
+  max-width: 200px; 
+}
+
+form input[type=number] {
+  max-width: 200px; 
+}
+
+form input[type=date] {
+  width: 200px; 
+}
+
+form input[type=time] {
+  width: 200px; 
+}
+
+select {
+  max-width: 200px;
+}
+
+/* -------  Navigation ------- */
+
+nav {
+  margin-top: 2px;
+  color: #caf0f8;
+}
+
+.nav-link {
+  color: #48cae4;  
+}
+
+.nav-link:hover {
+  color: #caf0f8;
+}
+
+/* -------  Media Query ------- */
+/* When a web browser is larger than 768 pixels -- apply these rules. */
+@media all and (min-width: 768px) {
+
+  /* -------  General Styles ------- */
+
+  h1 {
+      font-size: 48px;
+  }
+
+
+  /* ---------- Side Bar  -----------*/
+
+  .sidebar-align{
+    align-items: center;
+    justify-content: center;
+  } 
+
+  /* -------  Groups & Items ------- */
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .group-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    border-color: #fff;
+    flex-wrap: nowrap;
+  }
+
+  .group-field {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: nowrap;
+    margin: 0px;
+  }
+
+  .item {
+    flex: 1;
+    margin: 5px 10px;
+    padding: 5px;
+  }
+
+  .item-vertical-align {
+    align-items: center;
+    align-self: center;
+  }
+
+  .item-width {
+    flex: 2;
+  }
+
+  form input[type=text] {
+    max-width: 300px; 
+  }
+
+  form input[type=number] {
+    max-width: 200px; 
+  }
+
+  select {
+    max-width: 300px;
+  }
+
+  /* -------  Navigation ------- */
+
+  nav {
+    margin-top: 8px;
+    color: #bdbdbd;
+  }
+}
